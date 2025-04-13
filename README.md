@@ -44,23 +44,7 @@ The Math Gmail Client (`talk2mcp_math_gmail_client.py`) is a Python application 
    pip install mcp numpy pandas matplotlib
    ```
 
-2. Configure server settings in `config.json`:
-   ```json
-   {
-     "server": {
-       "port": 8080,
-       "max_connections": 10,
-       "timeout": 30,
-       "email": {
-         "rate_limit": 100,
-         "queue_size": 1000,
-         "retry_attempts": 3
-       }
-     }
-   }
-   ```
-
-3. Start the MCP server:
+2. Start the MCP server:
    ```bash
    python example2-3_gmail_server_2.py
    ```
