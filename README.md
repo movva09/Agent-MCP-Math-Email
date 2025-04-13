@@ -10,12 +10,6 @@ The Math Gmail Client (`talk2mcp_math_gmail_client.py`) is a Python application 
 - Automated email generation with mathematical results
 - Secure Gmail authentication
 - Multiple recipient support
-- Customizable email templates
-- Attachment support for complex results
-- Scheduled email sending
-- Email tracking and delivery confirmation
-- Rich text formatting for mathematical expressions
-- Batch processing capabilities
 
 ## Server Requirements
 1. MCP Server Setup:
@@ -23,26 +17,6 @@ The Math Gmail Client (`talk2mcp_math_gmail_client.py`) is a Python application 
    - MCP server package installed
    - Required server dependencies:
      - `mcp` package
-     - `numpy` for mathematical operations
-     - `pandas` for data processing
-     - `matplotlib` for graph generation
-     - `smtplib` for email handling
-
-2. Server Configuration:
-   - Port configuration (default: 8080)
-   - Memory allocation for mathematical operations
-   - Email queue management
-   - Maximum concurrent connections
-   - Timeout settings for operations
-   - Email rate limiting
-
-3. Server Tools:
-   - Mathematical computation engine
-   - Email queue manager
-   - Attachment processor
-   - Template renderer
-   - Session manager
-   - Error handling system
 
 ## Prerequisites
 - Python 3.x
@@ -88,7 +62,7 @@ The Math Gmail Client (`talk2mcp_math_gmail_client.py`) is a Python application 
 
 3. Start the MCP server:
    ```bash
-   python example2-3_server.py
+   python example2-3_gmail_server_2.py
    ```
 
 ## Available Tools
@@ -113,39 +87,6 @@ The Math Gmail Client (`talk2mcp_math_gmail_client.py`) is a Python application 
    - Gmail authentication
    - Email queue management
    - Basic delivery status tracking
-
-### Planned Future Additions
-
-1. Enhanced Mathematical Operations:
-   - Matrix operations
-   - Statistical calculations
-   - Graph plotting and analysis
-   - Equation solving
-   - Complex number operations
-   - Calculus functions
-   - Data visualization tools
-
-2. Advanced Email Features:
-   - Multiple recipient support
-   - HTML and rich text formatting
-   - Advanced attachment handling
-   - Email scheduling
-   - Template management
-   - Priority setting
-   - Reply-to configuration
-   - Email analytics
-   - Bulk processing
-   - Custom signatures
-   - Email filtering
-   - Auto-responders
-
-3. Integration Features:
-   - Google Calendar integration
-   - Google Drive attachment handling
-   - Google Sheets data export
-   - Custom API integrations
-   - Webhook support
-   - Third-party service connections
 
 ## Installation
 1. Clone the repository
@@ -248,49 +189,6 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-## Additional Features
-- Email template customization
-- Automated report generation
-- Integration with other Google services
-- Email analytics and tracking
-- Custom email signatures
-- Bulk email processing
-- Email filtering and organization
-- Attachment compression
-- Email encryption options
-- Custom notification settings
-
-## Advanced Server Configuration
-4. Performance Optimization:
-   - Email queue optimization
-   - Attachment processing optimization
-   - Memory management for large datasets
-   - Connection pooling
-   - Rate limiting configuration
-
-5. Security Features:
-   - End-to-end encryption
-   - Two-factor authentication
-   - IP whitelisting
-   - Activity monitoring
-   - Data retention policies
-
-## Advanced Usage
-4. Command Line Options:
-   ```bash
-   python talk2mcp_math_gmail_client.py --port 8080 --debug --log-level INFO --batch-size 100
-   ```
-
-5. Environment Variables:
-   ```
-   MCP_SERVER_HOST=localhost
-   MCP_SERVER_PORT=8080
-   DEBUG_MODE=true
-   LOG_LEVEL=INFO
-   BATCH_SIZE=100
-   EMAIL_RATE_LIMIT=100
-   ```
 
 ## Troubleshooting
 1. Common Issues:
